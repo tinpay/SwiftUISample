@@ -12,18 +12,16 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView{
-            VStack {
-                Text(viewModel.title ?? "")
-                Text(viewModel.startedAt ?? "")
-                Button {
-                    print("tap button")
-                } label: {
-                    Text(viewModel.ownerDisplayName ?? "")
-                }.foregroundColor(.white)
-                    .padding(40)
-                    .background(Color.blue)
-                    .cornerRadius(12)
-            }.navigationTitle("Chatworkイベント")
+            List(viewModel.events, id: \.id){ event in
+                HStack {
+                    VStack{
+                        Text(event.title)
+                        Text("\(event.startedAt) 〜 \(event.endedAt)")
+                    }
+                }
+            }.listStyle(.grouped)
+                .navigationTitle("Chatworkイベント")
+                .navigationBarTitleDisplayMode(.large)
         }.onAppear {
             async {
                 await fetchEvents()
@@ -39,9 +37,15 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let viewModel = ContentViewModel()
-        viewModel.title = "たいとる"
-        viewModel.startedAt = "2021-06-13 19:00"
-        viewModel.ownerDisplayName = "春日さん"
+        let event = Event(id: 1,
+                          title: "テストタイトルテストタイトルテストタイトルテストタイトルテストタイトル",
+                          startedAt: "2021/06/22 11:11:11",
+                          endedAt: "2021/06/22 11:11:21",
+                          ownerDisplayName: "春日",
+                          eventUrl: "https://www.chatwork.com",
+                          accepted: 1,
+                          description: "test")
+        viewModel.events = [event,event,event,event,event,]
         return ContentView(viewModel: viewModel)
     }
 }
