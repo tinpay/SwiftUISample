@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		912FC8B1268A14B400F0338F /* ConnpassDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 912FC8AF268A14B400F0338F /* ConnpassDataModel.xcdatamodeld */; };
+		912FC8B2268A14B400F0338F /* ConnpassDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 912FC8AF268A14B400F0338F /* ConnpassDataModel.xcdatamodeld */; };
+		912FC8E12691EEE700F0338F /* ConnpassCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 912FC8E02691EEE700F0338F /* ConnpassCore.docc */; };
+		912FC8E72691EEE800F0338F /* ConnpassCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912FC8DD2691EEE700F0338F /* ConnpassCore.framework */; };
+		912FC8EE2691EEE800F0338F /* ConnpassCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FC8ED2691EEE800F0338F /* ConnpassCoreTests.swift */; };
+		912FC8EF2691EEE800F0338F /* ConnpassCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 912FC8DF2691EEE700F0338F /* ConnpassCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		912FC8F22691EEE800F0338F /* ConnpassCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912FC8DD2691EEE700F0338F /* ConnpassCore.framework */; };
+		912FC8F32691EEE800F0338F /* ConnpassCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 912FC8DD2691EEE700F0338F /* ConnpassCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		912FC8FC26947CE200F0338F /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FC8FB26947CE200F0338F /* EventView.swift */; };
+		912FC8FD26947CE200F0338F /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FC8FB26947CE200F0338F /* EventView.swift */; };
+		912FC8FF26947EA400F0338F /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FC8FE26947EA400F0338F /* EventDetailView.swift */; };
+		912FC90026947EA400F0338F /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FC8FE26947EA400F0338F /* EventDetailView.swift */; };
+		912FC9022694826B00F0338F /* ConnpassPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FC9012694826B00F0338F /* ConnpassPageView.swift */; };
+		912FC9032694826B00F0338F /* ConnpassPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FC9012694826B00F0338F /* ConnpassPageView.swift */; };
+		912FC9052694849C00F0338F /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FC9042694849C00F0338F /* CustomWebView.swift */; };
+		912FC9062694849C00F0338F /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912FC9042694849C00F0338F /* CustomWebView.swift */; };
 		91B522082678D80A002CEB0F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B522072678D80A002CEB0F /* Tests_iOS.swift */; };
 		91B522122678D80A002CEB0F /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B522112678D80A002CEB0F /* Tests_macOS.swift */; };
 		91B522132678D80A002CEB0F /* ConnpassDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B521F12678D809002CEB0F /* ConnpassDemoApp.swift */; };
@@ -26,6 +42,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		912FC8E82691EEE800F0338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91B521EC2678D809002CEB0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 912FC8DC2691EEE700F0338F;
+			remoteInfo = ConnpassCore;
+		};
+		912FC8EA2691EEE800F0338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91B521EC2678D809002CEB0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91B521F72678D80A002CEB0F;
+			remoteInfo = "ConnpassDemo (iOS)";
+		};
+		912FC8F02691EEE800F0338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91B521EC2678D809002CEB0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 912FC8DC2691EEE700F0338F;
+			remoteInfo = ConnpassCore;
+		};
 		91B522042678D80A002CEB0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 91B521EC2678D809002CEB0F /* Project object */;
@@ -42,7 +79,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		912FC8D42691EEC600F0338F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				912FC8F32691EEE800F0338F /* ConnpassCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		912FC8B0268A14B400F0338F /* ConnpassDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConnpassDataModel.xcdatamodel; sourceTree = "<group>"; };
+		912FC8B32691EA1800F0338F /* Article.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Article.md; sourceTree = "<group>"; };
+		912FC8DD2691EEE700F0338F /* ConnpassCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConnpassCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		912FC8DF2691EEE700F0338F /* ConnpassCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnpassCore.h; sourceTree = "<group>"; };
+		912FC8E02691EEE700F0338F /* ConnpassCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ConnpassCore.docc; sourceTree = "<group>"; };
+		912FC8E62691EEE800F0338F /* ConnpassCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnpassCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912FC8ED2691EEE800F0338F /* ConnpassCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnpassCoreTests.swift; sourceTree = "<group>"; };
+		912FC8FB26947CE200F0338F /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		912FC8FE26947EA400F0338F /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		912FC9012694826B00F0338F /* ConnpassPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnpassPageView.swift; sourceTree = "<group>"; };
+		912FC9042694849C00F0338F /* CustomWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebView.swift; sourceTree = "<group>"; };
 		91B521F12678D809002CEB0F /* ConnpassDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnpassDemoApp.swift; sourceTree = "<group>"; };
 		91B521F22678D809002CEB0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		91B521F32678D80A002CEB0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,10 +121,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		912FC8DA2691EEE700F0338F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912FC8E32691EEE800F0338F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912FC8E72691EEE800F0338F /* ConnpassCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91B521F52678D80A002CEB0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912FC8F22691EEE800F0338F /* ConnpassCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +168,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		912FC8AE268A148000F0338F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				912FC8AF268A14B400F0338F /* ConnpassDataModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		912FC8DE2691EEE700F0338F /* ConnpassCore */ = {
+			isa = PBXGroup;
+			children = (
+				912FC8B32691EA1800F0338F /* Article.md */,
+				91B52234267A2102002CEB0F /* Model */,
+				91B52233267A20F3002CEB0F /* Repository */,
+				912FC8AE268A148000F0338F /* CoreData */,
+				912FC8DF2691EEE700F0338F /* ConnpassCore.h */,
+				912FC8E02691EEE700F0338F /* ConnpassCore.docc */,
+			);
+			path = ConnpassCore;
+			sourceTree = "<group>";
+		};
+		912FC8EC2691EEE800F0338F /* ConnpassCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				912FC8ED2691EEE800F0338F /* ConnpassCoreTests.swift */,
+			);
+			path = ConnpassCoreTests;
+			sourceTree = "<group>";
+		};
 		91B521EB2678D809002CEB0F = {
 			isa = PBXGroup;
 			children = (
 				91B521F02678D809002CEB0F /* Shared */,
 				91B522062678D80A002CEB0F /* Tests iOS */,
 				91B522102678D80A002CEB0F /* Tests macOS */,
+				912FC8DE2691EEE700F0338F /* ConnpassCore */,
+				912FC8EC2691EEE800F0338F /* ConnpassCoreTests */,
 				91B521F92678D80A002CEB0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,9 +214,11 @@
 			children = (
 				91B521F12678D809002CEB0F /* ConnpassDemoApp.swift */,
 				91B521F22678D809002CEB0F /* ContentView.swift */,
+				912FC8FB26947CE200F0338F /* EventView.swift */,
+				912FC8FE26947EA400F0338F /* EventDetailView.swift */,
+				912FC9012694826B00F0338F /* ConnpassPageView.swift */,
+				912FC9042694849C00F0338F /* CustomWebView.swift */,
 				91B522272678D822002CEB0F /* ContentViewModel.swift */,
-				91B52234267A2102002CEB0F /* Model */,
-				91B52233267A20F3002CEB0F /* Repository */,
 				91B521F32678D80A002CEB0F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -120,6 +231,8 @@
 				91B521FE2678D80A002CEB0F /* ConnpassDemo.app */,
 				91B522032678D80A002CEB0F /* Tests iOS.xctest */,
 				91B5220D2678D80A002CEB0F /* Tests macOS.xctest */,
+				912FC8DD2691EEE700F0338F /* ConnpassCore.framework */,
+				912FC8E62691EEE800F0338F /* ConnpassCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,7 +272,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		912FC8D82691EEE700F0338F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912FC8EF2691EEE800F0338F /* ConnpassCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		912FC8DC2691EEE700F0338F /* ConnpassCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912FC8F42691EEE800F0338F /* Build configuration list for PBXNativeTarget "ConnpassCore" */;
+			buildPhases = (
+				912FC8D82691EEE700F0338F /* Headers */,
+				912FC8D92691EEE700F0338F /* Sources */,
+				912FC8DA2691EEE700F0338F /* Frameworks */,
+				912FC8DB2691EEE700F0338F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConnpassCore;
+			productName = ConnpassCore;
+			productReference = 912FC8DD2691EEE700F0338F /* ConnpassCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		912FC8E52691EEE800F0338F /* ConnpassCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912FC8F72691EEE800F0338F /* Build configuration list for PBXNativeTarget "ConnpassCoreTests" */;
+			buildPhases = (
+				912FC8E22691EEE800F0338F /* Sources */,
+				912FC8E32691EEE800F0338F /* Frameworks */,
+				912FC8E42691EEE800F0338F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				912FC8E92691EEE800F0338F /* PBXTargetDependency */,
+				912FC8EB2691EEE800F0338F /* PBXTargetDependency */,
+			);
+			name = ConnpassCoreTests;
+			productName = ConnpassCoreTests;
+			productReference = 912FC8E62691EEE800F0338F /* ConnpassCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		91B521F72678D80A002CEB0F /* ConnpassDemo (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91B5221B2678D80A002CEB0F /* Build configuration list for PBXNativeTarget "ConnpassDemo (iOS)" */;
@@ -167,10 +328,12 @@
 				91B521F42678D80A002CEB0F /* Sources */,
 				91B521F52678D80A002CEB0F /* Frameworks */,
 				91B521F62678D80A002CEB0F /* Resources */,
+				912FC8D42691EEC600F0338F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				912FC8F12691EEE800F0338F /* PBXTargetDependency */,
 			);
 			name = "ConnpassDemo (iOS)";
 			productName = "ConnpassDemo (iOS)";
@@ -240,6 +403,13 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					912FC8DC2691EEE700F0338F = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					912FC8E52691EEE800F0338F = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 91B521F72678D80A002CEB0F;
+					};
 					91B521F72678D80A002CEB0F = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -273,11 +443,27 @@
 				91B521FD2678D80A002CEB0F /* ConnpassDemo (macOS) */,
 				91B522022678D80A002CEB0F /* Tests iOS */,
 				91B5220C2678D80A002CEB0F /* Tests macOS */,
+				912FC8DC2691EEE700F0338F /* ConnpassCore */,
+				912FC8E52691EEE800F0338F /* ConnpassCoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		912FC8DB2691EEE700F0338F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912FC8E42691EEE800F0338F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91B521F62678D80A002CEB0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,16 +497,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		912FC8D92691EEE700F0338F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912FC8E12691EEE700F0338F /* ConnpassCore.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912FC8E22691EEE800F0338F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912FC8EE2691EEE800F0338F /* ConnpassCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91B521F42678D80A002CEB0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				91B52231267A1D5C002CEB0F /* Connpass.swift in Sources */,
 				91B5222B2678D9FC002CEB0F /* Event.swift in Sources */,
+				912FC8B1268A14B400F0338F /* ConnpassDataModel.xcdatamodeld in Sources */,
+				912FC9052694849C00F0338F /* CustomWebView.swift in Sources */,
 				91B522152678D80A002CEB0F /* ContentView.swift in Sources */,
 				91B522132678D80A002CEB0F /* ConnpassDemoApp.swift in Sources */,
+				912FC8FF26947EA400F0338F /* EventDetailView.swift in Sources */,
 				91B522282678D822002CEB0F /* ContentViewModel.swift in Sources */,
 				91B5222E2678DA88002CEB0F /* ConnpassRepository.swift in Sources */,
+				912FC9022694826B00F0338F /* ConnpassPageView.swift in Sources */,
+				912FC8FC26947CE200F0338F /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,10 +537,15 @@
 			files = (
 				91B52232267A1D5C002CEB0F /* Connpass.swift in Sources */,
 				91B5222C2678D9FC002CEB0F /* Event.swift in Sources */,
+				912FC8B2268A14B400F0338F /* ConnpassDataModel.xcdatamodeld in Sources */,
+				912FC9062694849C00F0338F /* CustomWebView.swift in Sources */,
 				91B522162678D80A002CEB0F /* ContentView.swift in Sources */,
 				91B522142678D80A002CEB0F /* ConnpassDemoApp.swift in Sources */,
+				912FC90026947EA400F0338F /* EventDetailView.swift in Sources */,
 				91B522292678D822002CEB0F /* ContentViewModel.swift in Sources */,
 				91B5222F2678DA88002CEB0F /* ConnpassRepository.swift in Sources */,
+				912FC9032694826B00F0338F /* ConnpassPageView.swift in Sources */,
+				912FC8FD26947CE200F0338F /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +568,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		912FC8E92691EEE800F0338F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 912FC8DC2691EEE700F0338F /* ConnpassCore */;
+			targetProxy = 912FC8E82691EEE800F0338F /* PBXContainerItemProxy */;
+		};
+		912FC8EB2691EEE800F0338F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91B521F72678D80A002CEB0F /* ConnpassDemo (iOS) */;
+			targetProxy = 912FC8EA2691EEE800F0338F /* PBXContainerItemProxy */;
+		};
+		912FC8F12691EEE800F0338F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 912FC8DC2691EEE700F0338F /* ConnpassCore */;
+			targetProxy = 912FC8F02691EEE800F0338F /* PBXContainerItemProxy */;
+		};
 		91B522052678D80A002CEB0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 91B521F72678D80A002CEB0F /* ConnpassDemo (iOS) */;
@@ -369,6 +596,114 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		912FC8F52691EEE800F0338F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.ConnpassCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		912FC8F62691EEE800F0338F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.ConnpassCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		912FC8F82691EEE800F0338F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.ConnpassCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnpassDemo.app/ConnpassDemo";
+			};
+			name = Debug;
+		};
+		912FC8F92691EEE800F0338F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinpay.ConnpassCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnpassDemo.app/ConnpassDemo";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		91B522192678D80A002CEB0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -424,6 +759,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -477,6 +813,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -699,6 +1036,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		912FC8F42691EEE800F0338F /* Build configuration list for PBXNativeTarget "ConnpassCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912FC8F52691EEE800F0338F /* Debug */,
+				912FC8F62691EEE800F0338F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		912FC8F72691EEE800F0338F /* Build configuration list for PBXNativeTarget "ConnpassCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912FC8F82691EEE800F0338F /* Debug */,
+				912FC8F92691EEE800F0338F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		91B521EF2678D809002CEB0F /* Build configuration list for PBXProject "ConnpassDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -745,6 +1100,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		912FC8AF268A14B400F0338F /* ConnpassDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				912FC8B0268A14B400F0338F /* ConnpassDataModel.xcdatamodel */,
+			);
+			currentVersion = 912FC8B0268A14B400F0338F /* ConnpassDataModel.xcdatamodel */;
+			path = ConnpassDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 91B521EC2678D809002CEB0F /* Project object */;
 }

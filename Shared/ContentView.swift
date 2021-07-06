@@ -12,9 +12,12 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView{
-            
             List(viewModel.events, id: \.id){ event in
-                EventView(event: event)
+                NavigationLink(destination: EventDetailView(event: event),
+                               label: {
+                        EventView(event: event)
+                    }
+                )
             }
             .listStyle(.grouped)
             .navigationTitle("Connpass")
@@ -30,23 +33,6 @@ struct ContentView: View {
     
     private func fetchEvents() async {
         await viewModel.fetchConnpassEvent()
-    }
-}
-
-struct EventView: View {
-    let event: Event
-    var body: some View {
-        NavigationLink(destination: Text(event.title), label: {
-            HStack {
-                VStack{
-                    Text(event.title)
-                    Text("🕒 \(event.startedAt) 〜 \(event.endedAt)")
-                        .frame(maxWidth: .infinity , alignment: .leading)
-                        .font(Font.system(size: 12))
-                }
-            }.padding(5)
-        })
-        
     }
 }
 

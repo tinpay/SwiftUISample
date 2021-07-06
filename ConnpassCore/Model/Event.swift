@@ -8,14 +8,14 @@
 import Foundation
 import SwiftUI
 
-struct Event: Codable, Identifiable {
+public struct Event: Codable, Identifiable {
     
-    var id: Int
-    var title: String
-    var startedAt: String
-    var endedAt: String
-    var ownerDisplayName: String
-    var eventUrl: String
+    public var id: Int
+    public var title: String
+    public var startedAt: String
+    public var endedAt: String
+    public var ownerDisplayName: String
+    public var eventUrl: String
 //    var limit: Int
     var accepted: Int
 //    var waiting: Int
