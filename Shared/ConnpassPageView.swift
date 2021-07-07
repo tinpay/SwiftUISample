@@ -25,7 +25,9 @@ struct ConnpassPageView: View {
 
         var body: some View {
             Button(action: {
-                presentationMode.wrappedValue.dismiss()
+                if presentationMode.wrappedValue.isPresented {
+                    presentationMode.wrappedValue.dismiss()
+                }
             }) {
                 Text("とじる")
             }
