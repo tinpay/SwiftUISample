@@ -214,11 +214,11 @@
 			children = (
 				91B521F12678D809002CEB0F /* ConnpassDemoApp.swift */,
 				91B521F22678D809002CEB0F /* ContentView.swift */,
+				91B522272678D822002CEB0F /* ContentViewModel.swift */,
 				912FC8FB26947CE200F0338F /* EventView.swift */,
 				912FC8FE26947EA400F0338F /* EventDetailView.swift */,
 				912FC9012694826B00F0338F /* ConnpassPageView.swift */,
 				912FC9042694849C00F0338F /* CustomWebView.swift */,
-				91B522272678D822002CEB0F /* ContentViewModel.swift */,
 				91B521F32678D80A002CEB0F /* Assets.xcassets */,
 			);
 			path = Shared;
